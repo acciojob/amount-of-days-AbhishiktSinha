@@ -1,5 +1,18 @@
-//your JS code here. If required.
+const formSubmitButton = document.getElementById("submit-button-form");
+formSubmitButton.addEventListener("click", showYear);
+
+function showYear(){
+    alert(daysOfAYear());
+}
+
+function getYear(){
+    let year = Number(document.getElementById("year-input").innerHTML);
+    return year;
+}
+let year = getYear();
+
 function daysOfAYear(year) {
+    
 	if(isLeapYear(year)) {
 		return 366;
 	}
@@ -17,3 +30,4 @@ function isLeapYear(year){
 	}
 	else return false;
 }
+
