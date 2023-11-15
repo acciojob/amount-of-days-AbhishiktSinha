@@ -9,7 +9,7 @@ function getYear(){
     let year = Number(document.getElementById("year-input").innerHTML);
     return year;
 }
-let year = getYear();
+let year = prompt("Enter a year");
 
 function daysOfAYear(year) {
     
